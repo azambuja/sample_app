@@ -19,12 +19,16 @@ test: &test
   database: sample-test
   pool: 5
   timeout: 5000
+  host: localhost
+  port: 5432
 
 production:
   adapter: postgresql
   database: sample-prod
   pool: 5
   timeout: 5000
+  host: localhost
+  port: 5432
 
 cucumber:
   <<: *test
